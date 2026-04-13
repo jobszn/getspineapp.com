@@ -1,0 +1,191 @@
+<!DOCTYPE html>                                                                                                         
+  <html lang="en">                                                                                                          <head>
+    <meta charset="UTF-8" />                                                                                              
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spine — Catalog Your Movie Collection</title>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body {
+        background-color: #000000;
+        color: #ffffff;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      }
+
+      /* NAV */
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px;
+      }
+      .nav-logo { font-size: 14px; letter-spacing: 4px; font-weight: 600; }
+      .nav-logo span { color: #067bd2; }
+      .nav-contact { font-size: 13px; color: #ffffff; text-decoration: none; opacity: 0.6; }
+      .nav-contact:hover { opacity: 1; }
+
+      /* HERO */
+      .hero {
+        padding: 80px 40px 100px;
+        max-width: 800px;
+      }
+      .hero h1 {
+        font-size: 52px;
+        font-weight: 700;
+        line-height: 1.1;
+        margin-bottom: 24px;
+      }
+      .hero h1 span { color: #067bd2; }
+      .hero p {
+        font-size: 18px;
+        line-height: 1.7;
+        opacity: 0.7;
+        margin-bottom: 40px;
+        max-width: 600px;
+      }
+      .download-btn {
+        display: inline-block;
+        background-color: #067bd2;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 14px 32px;
+        border-radius: 10px;
+        font-size: 15px;
+        font-weight: 600;
+      }
+      .download-btn:hover { background-color: #0570bb; }
+
+      /* DIVIDER */
+      .divider {
+        height: 1px;
+        background-color: #0f1f35;
+        margin: 0 40px;
+      }
+
+      /* SOCIAL */
+      .social {
+        padding: 60px 40px;
+        text-align: center;
+      }
+      .social h2 {
+        font-size: 13px;
+        letter-spacing: 3px;
+        font-weight: 600;
+        opacity: 0.4;
+        margin-bottom: 28px;
+        text-transform: uppercase;
+      }
+      .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+        flex-wrap: wrap;
+      }
+      .social-links a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 14px;
+        opacity: 0.6;
+        letter-spacing: 1px;
+      }
+      .social-links a:hover { opacity: 1; color: #067bd2; }
+
+      /* FOOTER */
+      footer {
+        padding: 32px 40px;
+        border-top: 1px solid #0f1f35;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+      footer p { font-size: 12px; opacity: 0.3; }
+      .footer-links { display: flex; gap: 24px; }
+      .footer-links a {
+        font-size: 12px;
+        color: #ffffff;
+        text-decoration: none;
+        opacity: 0.4;
+      }
+      .footer-links a:hover { opacity: 1; }
+
+      /* POLICY PAGES */
+      .policy {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 60px 40px 100px;
+      }
+      .policy h1 {
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 8px;
+      }
+      .policy .updated {
+        font-size: 13px;
+        opacity: 0.4;
+        margin-bottom: 48px;
+      }
+      .policy h2 {
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: 36px;
+        margin-bottom: 10px;
+      }
+      .policy p, .policy li {
+        font-size: 15px;
+        line-height: 1.8;
+        opacity: 0.7;
+        margin-bottom: 12px;
+      }
+      .policy ul { padding-left: 20px; }
+      .policy a { color: #067bd2; }
+
+      @media (max-width: 600px) {
+        .hero h1 { font-size: 36px; }
+        nav, .hero, .social, footer, .policy { padding-left: 24px; padding-right: 24px; }
+        footer { flex-direction: column; align-items: flex-start; }
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- NAV -->
+    <nav>
+      <div class="nav-logo">SP<span>I</span>NE</div>
+      <a href="mailto:support@getspineapp.com" class="nav-contact">Contact Us</a>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <h1>Catalog Your<br /><span>Movie Collection</span></h1>
+      <p>Spine is the easiest way to catalog your physical media collection. Track any format from 4K UHD to LaserDisc,   
+  with movie details pulled automatically. Monitor upcoming and recent releases from boutique labels like Criterion       
+  Collection, Arrow Video, Vinegar Syndrome, and more. Follow other collectors, see what they're adding, and share your   
+  passion for physical media.</p>
+      <a href="#" class="download-btn">Download on the App Store</a>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- SOCIAL -->
+    <section class="social">
+      <h2>Join the Community</h2>
+      <div class="social-links">
+        <a href="https://www.tiktok.com/@spineappco" target="_blank">TikTok</a>
+        <a href="https://www.instagram.com/spineappco" target="_blank">Instagram</a>
+        <a href="https://www.twitter.com/spineappco" target="_blank">Twitter / X</a>
+        <a href="https://www.reddit.com/r/spineapp" target="_blank">Reddit</a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2026 Spine. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms of Service</a>
+      </div>
+    </footer>
+
+  </body>
+  </html>
